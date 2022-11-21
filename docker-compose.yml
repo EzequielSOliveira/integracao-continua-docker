@@ -51,15 +51,15 @@ services:
         depends_on:
             - mysql
             
-    angular:
-        container_name: angular
-        build: 
-            context: ./angular
-            dockerfile: Dockerfile
-        ports:
-            - 8080:8080
-        links:
-            - openjdk
-        depends_on:
-            - openjdk
-            - mysql
+    #angular:
+    #    container_name: angular
+    #    build: 
+    #        context: ./angular
+    #        dockerfile: Dockerfile
+    #    ports:
+    #        - 8080:8080
+    #    links:
+    #        - openjdk
+    #    depends_on:
+    #        - openjdk
+    #        - mysql

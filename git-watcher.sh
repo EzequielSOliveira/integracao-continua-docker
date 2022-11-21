@@ -19,7 +19,7 @@ if [ $LOCAL = $REMOTE ]; then
 elif [ $LOCAL = $BASE ]; then
     echo "Need to pull"
     git pull
-    docker compose up
+    docker compose up --build
 elif [ $REMOTE = $BASE ]; then
     echo "Need to push"
 else
